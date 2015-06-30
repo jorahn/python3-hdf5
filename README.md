@@ -1,6 +1,6 @@
 # Dockerfile for image `rcsa/python3-hdf5`
 
-# Ingredients:
+## Ingredients:
 
 - Python 3.4 (linked to update with official image)
 - HDF5 (quite cumbersome to install from source)
@@ -10,7 +10,7 @@
 
 All taken care of...
 
-# Build on top of this image with a Dockerfile like this:
+## Build on top of this image with a Dockerfile like this:
 
     FROM rcsa/python3-hfd5:latest
     ENV PYTHONUNBUFFERED 1
