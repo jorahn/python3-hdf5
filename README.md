@@ -21,3 +21,14 @@ All taken care of...
     ADD . /code/
     EXPOSE 5000
     CMD ["python", "app.py"]
+
+## and app.py like this (see [here](http://pandas.pydata.org/pandas-docs/stable/io.html#io-hdf5)):
+
+    import pandas as pd
+    #persist dataframe
+    with pd.HDFStore('file.h5') as f:
+        store['key'] = pd.DataFrame()
+    #load dataframe
+    with pd.HDFStore('file.h5') as f:
+        df = store['key']
+    
