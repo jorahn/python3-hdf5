@@ -26,9 +26,9 @@ All taken care of...
 
     import pandas as pd
     #persist dataframe
-    with pd.HDFStore('file.h5') as f:
+    with pd.HDFStore('file.h5') as store:
         store['key'] = pd.DataFrame()
     #load dataframe
-    with pd.HDFStore('file.h5') as f:
+    with pd.HDFStore('file.h5') as store:
         df = store['key']
     
