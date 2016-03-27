@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get -yq install gcc build-essential zlib1g-dev wget
 
 # Build HDF5
-RUN cd ; wget https://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.16.tar.gz
+RUN cd ; wget https://www.hdfgroup.org/ftp/HDF5/prev-releases/hdf5-1.8.16/src/hdf5-1.8.16.tar.gz
 RUN cd ; tar zxf hdf5-1.8.16.tar.gz
 RUN cd ; mv hdf5-1.8.16 hdf5-setup
 RUN cd ; cd hdf5-setup ; ./configure --prefix=/usr/local/
